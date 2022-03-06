@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Header from '../../components/header';
+import Racao from '../../assets/img/ração.png';
+import BuyBag from '../../asssets/img/bag-reserves.png';
+import IconCatgory from '../../assets/img/sports-svgrepo.png'
 
 function App() {
     // const [listaEventos, setListaEventos] = useState([]);
@@ -43,55 +47,123 @@ function App() {
 
     return (
         <div>
-            <header className="cabecalhoPrincipal">
-                <div className="container">
-
-                    <nav className="cabecalhoPrincipal-nav">
-                        <a href="#conteudoPrincipal-contato">Contato</a>
-                        {/* <a className="cabecalhoPrincipal-nav-login" href="/login">Login</a> */}
-                    </nav>
-                </div>
-            </header>
-
-            <section className="conteudoImagem">
-                <div>
-                    <h1>Gufi</h1>
-                    <h2>Área de eventos da Escola SENAI de Informática.</h2>
-                </div>
-            </section>
-
-            <main className="conteudoPrincipal">
-                <section id="conteudoPrincipal-eventos">
-                    <h1 id="conteudoPrincipal-eventos-titulo">Próximos Eventos</h1>
-                    <div className="container">
+            <Header />
+            <main>
+                <section className="banner_home">
+                    <div className="container_home banner_space">
+                        <h1>
+                            Encontre as melhores <span className="span_1">mercadorias</span>
+                            em contato direto com os <span className="span_2"> fornecedores</span>
+                        </h1>
+                        <p>Estoques pelo melhores preços você só encontra aqui!</p>
+                        <button>
+                            Crie já sua <b>conta!</b>
+                        </button>
                     </div>
                 </section>
-
-                <section id="conteudoPrincipal-visao">
-                    <h1 id="conteudoPrincipal-visao-titulo">Por Quê Participar?</h1>
-                    <div className="container">
-                        <p className="visao-texto">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-                            Nullam auctor suscipit eros sed blandit. <br />
-                            Fusce euismod neque sed dapibus sollicitudin. <br />Duis vel lacus
-                            vestibulum, molestie dui eu, bibendum nunc.
-                        </p>
+                <section className="container_home carrosel_produtos">
+                    <div className="card">
+                        <div className="título_card">
+                            <h2>Nome Produto</h2>
+                            <p>Lore Ipsum Definição</p>
+                        </div>
+                        <img src={Racao}alt="" />
+                        <div className="buy_card">
+                            <span>R$25</span>
+                            <button>
+                                Reservar <img src={BuyBag} alt="" />
+                            </button>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="título_card">
+                            <h2>Nome Produto</h2>
+                            <p>Lore Ipsum Definição</p>
+                        </div>
+                        <img src={Racao}alt="" />
+                        <div className="buy_card">
+                            <span>R$25</span>
+                            <button>
+                                Reservar <img src={BuyBag} alt="" />
+                            </button>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="título_card">
+                            <h2>Nome Produto</h2>
+                            <p>Lore Ipsum Definição</p>
+                        </div>
+                        <img src={Racao}alt="" />
+                        <div className="buy_card">
+                            <span>R$25</span>
+                            <button>
+                                Reservar <img src={BuyBag} alt="" />
+                            </button>
+                        </div>
                     </div>
                 </section>
-
-                <section id="conteudoPrincipal-contato">
-                    <h1 id="conteudoPrincipal-contato-titulo">Contato</h1>
-                    <div
-                        className="container conteudo-contato-titulo"
-                    >
-                        <div
-                            className="contato-mapa conteudo-contato-mapa"
-                        ></div>
-                        <div
-                            className="contato-endereco conteudo-contato-endereco"
-                        >
-                            Alameda Barão de Limeira, 539 <br />
-                            São Paulo - SP
+                <img className="division" src="assets/division.png" alt="" />
+                <section className="container_home categorys">
+                    <div className="box_categorys">
+                        <div className="posicionador_cards">
+                            <div className="category_card_blue">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                            <div className="category_card_orange">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                            <div className="category_card_blue">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                            <div className="category_card_orange">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                        </div>
+                        <div className="posicionador_cards2">
+                            <div className="category_card_orange">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                            <div className="category_card_blue">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                            <div className="category_card_orange">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                            <div className="category_card_blue">
+                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <a href="">categoria</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <img className="division2" src="assets/division.png" alt="" />
+                <section className="about_us">
+                    <div className="container_home">
+                        <div>
+                            <h3>Quem nós somos?</h3>
+                            <hr />
+                        </div>
+                        <div>
+                            <p className="p1">
+                                A MoveOfertas tem como objetivo disponibilizar em massa ofertas a um
+                                valor baixo de mercado para consumidores interessados em comprar mais
+                                barato, diminuindo o prejuízo.
+                            </p>
+                            <p className="p2">
+                                Conectando as partes interessadas, dando um melhor uso a esses
+                                produtos. Ao invés dos varejistas realizarem grandes queimas de
+                                estoque, ou incineração de produtos vencidos, podem disponibilizá-los
+                                para quem precisa, além de obter retorno financeiro em produtos que
+                                anteriormente seriam lixo. A solução implementada em massa pode ser
+                                útil principalmente em franquias.
+                            </p>
                         </div>
                     </div>
                 </section>

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { parseJwt, usuarioAutenticado } from '../../services/auth';
 
-import '../assets/css/login.css';
+import '../../assets/css/login.css';
 
 export default class Login extends Component {
     constructor(props) {
