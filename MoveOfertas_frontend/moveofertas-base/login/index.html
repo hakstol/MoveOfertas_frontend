@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo!</h2>
+                <p class="description description-primary">Já tem uma conta?</p>
+                <p class="description description-primary">Entre agora mesmo</p>
+                <button id="signin" class="btn btn-primary">Login</button>
+                <img class="draw" src="./assets/img/Drawkit IMG.png" alt="">
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Crie uma conta</h2>
+                <form class="form">
+                    <label class="inputs" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input class="input_nome" type="text">
+                    </label>
+
+                    <label class="inputs" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input class="input_email" type="email">
+                    </label>
+
+                    <label class="inputs" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input class="input_senha" type="password">
+                    </label>
+
+                    <select class="inputs input_categoria" id="categoria">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="1">Empresa</option>
+                        <option value="2">Cliente</option>
+                    </select>
+
+                    <button class="btn btn-second">Cadastrar</button>
+                </form>
+            </div><!-- second column -->
+
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column column2">
+                <h2 class="title title-primary">Olá</h2>
+                <p class="description description-primary description2">É novo por aqui?</p>
+                <p class="description description-primary description2">Crie uma conta agora mesmo</p>
+                <button id="signup" class="btn btn-primary2">Cadastre-se</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Entre em sua conta</h2>
+                <form class="form">
+
+                    <label class=" inputs" for="">
+                        <input  class="input_email2" type="email">
+                    </label>
+
+                    <label class="inputs" for="">
+                        <input class="input_senha2" type="password">
+                    </label>
+
+                    <a class="password" href="#">forgot your password?</a>
+                    <button class="btn btn-second">sign in</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="./animacao.js"></script>
+</body>
+
+</html>
