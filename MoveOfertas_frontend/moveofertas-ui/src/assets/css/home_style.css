@@ -116,7 +116,7 @@
 }
 
 .banner_home {
-    background-image: url(assets/banner-bg.png);
+    background-image: url(../../assets/img/banner-bg.png);
     background-color: #FAF6F3;
     height: 576px;
     background-repeat: no-repeat;
@@ -190,7 +190,7 @@
 
 .carrosel_produtos {
     height: 500px;
-    background-image: url(assets/back-carrousel.png);
+    background-image: url(../../assets/img/back-carrousel.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: center;
@@ -357,7 +357,7 @@
 
 .about_us {
     margin-top: 100px;
-    background-image: url(assets/banner-about.png);
+    background-image: url(../../assets/img/banner-about.png);
     background-repeat: no-repeat;
 }
 
@@ -479,7 +479,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(assets/wave.png);
+    background: url(../../assets/img/wave.png);
     background-size: 1000px 100px;
 }
 

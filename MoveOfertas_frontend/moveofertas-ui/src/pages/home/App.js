@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Footer from '../../components/footer';
 import Header from '../../components/header';
 import Racao from '../../assets/img/ração.png';
 import BuyBag from '../../asssets/img/bag-reserves.png';
-import IconCatgory from '../../assets/img/sports-svgrepo.png'
+import IconCategorys from '../../assets/img/sports-svgrepo.png'
+import Division from '../../assets/img/division.png'
 
 function App() {
     // const [listaEventos, setListaEventos] = useState([]);
@@ -67,7 +69,7 @@ function App() {
                             <h2>Nome Produto</h2>
                             <p>Lore Ipsum Definição</p>
                         </div>
-                        <img src={Racao}alt="" />
+                        <img src={Racao} alt="" />
                         <div className="buy_card">
                             <span>R$25</span>
                             <button>
@@ -80,7 +82,7 @@ function App() {
                             <h2>Nome Produto</h2>
                             <p>Lore Ipsum Definição</p>
                         </div>
-                        <img src={Racao}alt="" />
+                        <img src={Racao} alt="" />
                         <div className="buy_card">
                             <span>R$25</span>
                             <button>
@@ -93,7 +95,7 @@ function App() {
                             <h2>Nome Produto</h2>
                             <p>Lore Ipsum Definição</p>
                         </div>
-                        <img src={Racao}alt="" />
+                        <img src={Racao} alt="" />
                         <div className="buy_card">
                             <span>R$25</span>
                             <button>
@@ -102,48 +104,48 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <img className="division" src="assets/division.png" alt="" />
+                <img className="division" src={Division} alt="" />
                 <section className="container_home categorys">
                     <div className="box_categorys">
                         <div className="posicionador_cards">
                             <div className="category_card_blue">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                             <div className="category_card_orange">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                             <div className="category_card_blue">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                             <div className="category_card_orange">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                         </div>
                         <div className="posicionador_cards2">
                             <div className="category_card_orange">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                             <div className="category_card_blue">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                             <div className="category_card_orange">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                             <div className="category_card_blue">
-                                <img src="assets/sports-svgrepo.png" alt="" />
+                                <img src={IconCategorys} alt="" />
                                 <a href="">categoria</a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <img className="division2" src="assets/division.png" alt="" />
+                <img className="division2" src={Division} alt="" />
                 <section className="about_us">
                     <div className="container_home">
                         <div>
@@ -168,7 +170,9 @@ function App() {
                     </div>
                 </section>
             </main>
+            <Footer />
         </div>
+
     );
 }
 

@@ -1,4 +1,4 @@
-import '../assets/css/hoome_style.css';
+import '../assets/css/home_style.css';
 import LogoHeader from '../assets/img/logo-header.png';
 import SearchIcon from '..assets/img/serach_icon.svg';
 export default function Header() {
