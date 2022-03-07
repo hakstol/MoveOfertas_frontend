@@ -1,0 +1,29 @@
+.footer {
+    background-color: #419EBD;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.centralizarConteudoFooter {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: fit-content;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.logoFooter {
+    display: flex;
+    align-items: center;
+}
+
+.centralizarConteudoFooter .textoFooter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 440px;
+    color: #FFFFFF;
+}

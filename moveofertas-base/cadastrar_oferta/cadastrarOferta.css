@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Ropa+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #F3F5F7;
+}
+
+.main {
+    margin-top: 26px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.voltarHome {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    align-items: center;
+    margin: 96px 0 0 67px;
+}
+
+.voltarHome>p {
+    color: #063F5C;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 43px;
+}
+
+.iconArrow {
+    color: #063F5C;
+    font-size: 38px;
+}
+
+.uploadImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posicionarIconImg {
+    font-size: 125px;
+    color: black;
+    opacity: 0.25;
+}
+
+.titulo {
+    margin: 0 0 15px 280px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 105px;
+    color: #063F5C;
+}
+
+.uploadImg {
+    width: 485px;
+    height: 489px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 578px;
+    height: fit-content;
+    background: #053F5C;
+    border-radius: 10px;
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.inputs {
+    width: 225px;
+    height: 32px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+
+.inputDescricao {
+    height: 80px;
+}
