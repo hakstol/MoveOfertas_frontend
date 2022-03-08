@@ -10,7 +10,7 @@ import { parseJwt, usuarioAutenticado } from './services/auth';
 
 import './index.css';
 
-import Home from './pages/home/App';
+import Home from './pages/home/home';
 import Login from './pages/login/login';
 
 import reportWebVitals from './reportWebVitals';

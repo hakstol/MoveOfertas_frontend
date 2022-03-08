@@ -104,10 +104,10 @@ export default class Login extends Component {
         this.setState({ isLoading: true });
 
         let cadastro = {
+            idTipoUsuario: this.state.idTipoUsuario,
             nomeUsuario: this.state.nomeUsuario,
             email: this.state.email,
             senha: this.state.senha,
-            idTipoUsuario: this.state.idTipoUsuario,
         };
 
         axios
@@ -119,12 +119,10 @@ export default class Login extends Component {
             .then((resposta) => {
                 if (resposta.status === 201) {
                     console.log('Usuario cadastrado!');
-                    this.setState({ isLoading: false });
                 }
             })
             .catch((erro) => {
                 console.log(erro);
-                this.setState({ isLoading: false });
             })
     };
 

@@ -14,9 +14,9 @@ export default function Header() {
                         </button>
                     </div>
                     <nav>
-                        <a href="">home</a>
-                        <a href="">products</a>
-                        <a href="">my reserves</a>
+                        <a href="http://localhost:3000/">home</a>
+                        <a href="http://localhost:3000/produto">products</a>
+                        <a href="http://localhost:3000//lista/minhas/reservas">my reserves</a>
                         <a href="http://localhost:3000/login">my account</a>
                     </nav>
                 </div>
